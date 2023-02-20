@@ -17,5 +17,12 @@
 	--color-04: #bebebe;
 	--color-05: #1c1c1c;
 
-	
+	/* Gap */
+		--margin-large: 1.5rem;
+		--margin-medium: 1rem;
+		--marign-small: 0.5rem;
+		--padding-large: 1.5rem;
+		--padding-medium: 1rem;
+		--padding-small: 0.5rem;
+		--gap-grid: 1rem;
 }
