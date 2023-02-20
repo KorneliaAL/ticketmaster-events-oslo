@@ -1,0 +1,12 @@
+
+:root {
+	/* Font-family */
+	--font-family-body: 'Barlow Condensed', sans-serif;
+	--font-family-header: 'Bellefair', serif;
+
+	/* Font-size */
+	--font-size-large: 32px;
+	--font-size-medium: 20px;
+	--font-size-small: 16px;
+	--font-size-body: 14px;
+}
