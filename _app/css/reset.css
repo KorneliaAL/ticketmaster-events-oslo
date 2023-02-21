@@ -10,3 +10,7 @@ button {
 	border: none;
 	cursor: pointer;
 }
+
+img {
+	width: 100%;
+}
