@@ -4,9 +4,11 @@
 }
 
 .header__logo {
+	color: var(--color-01);
 	font-family: var(--font-family-header);
 	font-size: var(--font-size-large);
 	font-weight: var(--font-weight-bold);
+	text-decoration: none;
 }
 /* 
 .header__navigation
