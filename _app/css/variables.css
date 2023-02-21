@@ -1,14 +1,13 @@
-
 :root {
 	/* Font-family */
 	--font-family-body: 'Barlow Condensed', sans-serif;
 	--font-family-header: 'Bellefair', serif;
 
 	/* Font-size */
-	--font-size-large: 32px;
-	--font-size-medium: 20px;
-	--font-size-small: 16px;
-	--font-size-body: 14px;
+	--font-size-large: 1.6rem;
+	--font-size-medium: 1rem;
+	--font-size-small: 0.8rem;
+	--font-size-body: 0.7rem;
 
 	/* Color */
 	--color-01: #022723;
