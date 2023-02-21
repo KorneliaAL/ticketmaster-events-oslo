@@ -1,6 +1,8 @@
 .header {
 	background-color: var(--color-02);
 	padding: var(--padding-medium);
+	display: flex;
+	justify-content: space-between;
 }
 
 .header__logo {
@@ -10,9 +12,23 @@
 	font-weight: var(--font-weight-bold);
 	text-decoration: none;
 }
+
+.header__navigation-burger-button {
+	background-image: url(../../assets/icons/burger-menu.svg);
+	width: 2rem;
+	height: 2rem;
+	background-repeat: none;
+}
+
+.header__navigation-exit-button {
+	background-image: url(../../assets/icons/exit-menu.svg);
+	width: 2rem;
+	height: 2rem;
+	background-repeat: none;
+}
 /* 
-.header__navigation
-.header__navigation-burger-button
+
+
 .header__navigation-list-container
 .header__navigation-element-button
 .header__navigation-element
