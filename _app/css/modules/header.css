@@ -1,8 +1,9 @@
 .header {
 	background-color: var(--color-02);
-	padding: var(--padding-medium);
+	padding: var(--padding-large) var(--padding-medium);
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .header__logo {
@@ -11,13 +12,30 @@
 	font-size: var(--font-size-large);
 	font-weight: var(--font-weight-bold);
 	text-decoration: none;
+	/* display: none; */
+}
+
+.header__navigation {
+	position: absolute;
+	transform: scaleX(100%);
+	inset: 10% 0 0 0;
+	z-index: 100;
+	background: var(--color-03);
+}
+
+.header__navigation--visible {
+	display: block;
 }
 
 .header__navigation-burger-button {
+	position: absolute;
+	z-index: 1000;
+	right: var(--margin-medium);
 	background-image: url(../../assets/icons/burger-menu.svg);
 	width: 2rem;
 	height: 2rem;
 	background-repeat: none;
+	/* display: none; */
 }
 
 .header__navigation-exit-button {
@@ -26,13 +44,36 @@
 	height: 2rem;
 	background-repeat: none;
 }
-/* 
 
+.header__navigation-element {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid var(--color-04);
+	padding: var(--padding-medium);
+	font-family: var(--font-family-body);
+}
 
-.header__navigation-list-container
-.header__navigation-element-button
-.header__navigation-element
-.header__search
-.header__search-input
-.header__heart
+.header__navigation-arrow-button {
+	background-image: url(../../assets/icons/arrow.svg);
+	background-repeat: no-repeat;
+	width: 1.5rem;
+	height: 1rem;
+	transform: rotate(-90deg);
+}
+/* .header__navigation-list-container, 
+.header__search-input, 
 .header__search-button */
+.header__search {
+	background-image: url(../../assets/icons/search.svg);
+	background-repeat: no-repeat;
+	width: 1rem;
+	height: 1rem;
+}
+
+.header__heart {
+	background-image: url(../../assets/icons/heart.svg);
+	background-repeat: no-repeat;
+	width: 2.5rem;
+	height: 2.5rem;
+}
