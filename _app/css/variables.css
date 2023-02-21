@@ -1,7 +1,7 @@
 :root {
 	/* Font-family */
 	--font-family-body: 'Barlow Condensed', sans-serif;
-	--font-family-header: 'Bellefair', serif;
+	--font-family-header: 'Times New Roman', serif;
 
 	/* Font-size */
 	--font-size-large: 1.6rem;
