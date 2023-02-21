@@ -3,8 +3,12 @@
 	padding: var(--padding-medium);
 }
 
-
-/* .header__logo
+.header__logo {
+	font-family: var(--font-family-header);
+	font-size: var(--font-size-large);
+	font-weight: var(--font-weight-bold);
+}
+/* 
 .header__navigation
 .header__navigation-burger-button
 .header__navigation-list-container
