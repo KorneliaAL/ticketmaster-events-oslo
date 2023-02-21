@@ -9,6 +9,9 @@
 	--font-size-small: 0.8rem;
 	--font-size-body: 0.7rem;
 
+	/* Font-weight */
+	--font-weight-bold: 700;
+
 	/* Color */
 	--color-01: #022723;
 	--color-02: #d1eef6;
