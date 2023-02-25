@@ -27,4 +27,7 @@
 		--padding-medium: 1rem;
 		--padding-small: 0.5rem;
 		--gap-grid: 1rem;
+
+	/* Radius */
+		--border-radius: 0.5rem;
 }
