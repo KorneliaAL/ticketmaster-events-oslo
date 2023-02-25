@@ -16,17 +16,18 @@
 
 .header__navigation {
 	position: absolute;
-	transform: scaleX(0%);
 	inset: 10% 0 0 0;
 	z-index: 100;
 	background: var(--color-03);
+	transition: all 200ms ease-in-out;
+	transform: scaleY(0%);
 }
 
 .header__navigation--visible {
-	transform: scaleX(100%);
+	transform: scaleY(100%);
 }
 
-.header__navigation-burger-button {
+.header__navigation-menu-button {
 	position: absolute;
 	z-index: 1000;
 	right: var(--margin-medium);
