@@ -12,19 +12,18 @@
 	font-size: var(--font-size-large);
 	font-weight: var(--font-weight-bold);
 	text-decoration: none;
-	/* display: none; */
 }
 
 .header__navigation {
 	position: absolute;
-	transform: scaleX(100%);
+	transform: scaleX(0%);
 	inset: 10% 0 0 0;
 	z-index: 100;
 	background: var(--color-03);
 }
 
 .header__navigation--visible {
-	display: block;
+	transform: scaleX(100%);
 }
 
 .header__navigation-burger-button {
