@@ -11,6 +11,15 @@ button {
 	cursor: pointer;
 }
 
+a {
+	background: inherit;
+	font: inherit;
+	border: none;
+	cursor: pointer;
+	color: inherit;
+	text-decoration: none;
+}
+
 img {
 	width: 100%;
 }
