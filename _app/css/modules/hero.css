@@ -1,0 +1,8 @@
+.hero__img {
+	margin: var(--margin-large) 0;
+}
+
+.hero__header {
+	font-size: var(--font-size-large);
+	text-align: center;
+}
