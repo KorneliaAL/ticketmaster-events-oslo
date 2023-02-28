@@ -4,5 +4,6 @@
 
 .hero__header {
 	font-size: var(--font-size-large);
+	font-family: var(--font-family-header);
 	text-align: center;
 }
