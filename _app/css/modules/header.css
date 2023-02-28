@@ -46,6 +46,7 @@
 }
 
 .header__navigation-element-button {
+	display: block;
 	width: 100%;
 	text-align: left;
 	padding: var(--padding-medium);
