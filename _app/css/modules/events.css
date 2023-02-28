@@ -13,18 +13,64 @@
 
 .events__artist {
 	margin: var(--margin-medium);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid var(--color-01);
 }
 
 .events__info-container {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	font-size: var(--font-size-small);
-	border: 1px solid;
+	/* border: 1px solid black; */
+}
+
+.events__date-container {
+	/* border: 1px solid black; */
+	/* border-right: 1px solid; */
+	padding: var(--padding-x-small);
+	width: 10%;
+	font-size: var(--font-size-x-small);
 }
 
 .events__clock-icon {
 	background-image: url(../../assets/icons/clock.svg);
+	background-repeat: no-repeat;
+	height: 0.76rem;
+	width: 0.8rem;
+	display: inline-block;
+}
+
+.events__buy-container {
+	text-align: center;
+	/* padding: var(--padding-small) var(--padding-medium); */
+	align-self: left;
+	/* border: 1px solid black;	 */
+}
+
+.events__buy-button {
+	background-color: var(--color-01);
+	color: var(--color-02);
+	padding: var(--padding-small);
+	text-transform: uppercase;
+	
+}
+
+.events__info {
+	width: 80%;
+	/* padding-left: var(--padding-small); */
+	font-size: var(--font-size-x-small);
+	/* border: 1px solid; */
+}
+
+.events__artist-name {
+	align-self: left;
+	font-size: var(--font-size-small);
+}
+
+.events__location-icon {
+	background-image: url(../../assets/icons/location.svg);
 	background-repeat: no-repeat;
 	height: 0.76rem;
 	width: 0.8rem;
