@@ -1,13 +1,32 @@
-.events__article {
+.events-preview__article {
 	margin: var(--margin-large) var(--margin-medium);
 }
 
-.events__header {
+.events-preview__header {
 	font-size: var(--font-size-medium);
 	font-weight: var(--font-weight-medium);
 }
 
-.events__text {
+.events-preview__text {
 	font-size: var(--font-size-small);
 }
 
+.events__artist {
+	margin: var(--margin-medium);
+}
+
+.events__info-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: var(--font-size-small);
+	border: 1px solid;
+}
+
+.events__clock-icon {
+	background-image: url(../../assets/icons/clock.svg);
+	background-repeat: no-repeat;
+	height: 0.76rem;
+	width: 0.8rem;
+	display: inline-block;
+}
