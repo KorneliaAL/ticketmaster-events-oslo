@@ -11,6 +11,8 @@
 
 	/* Font-weight */
 	--font-weight-bold: 700;
+	--font-weight-medium: 500;
+	--font-weght-regular: 400;
 
 	/* Color */
 	--color-01: #022723;
