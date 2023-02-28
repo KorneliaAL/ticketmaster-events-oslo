@@ -8,6 +8,7 @@
 	--font-size-medium: 1rem;
 	--font-size-small: 0.8rem;
 	--font-size-body: 0.7rem;
+	--font-size-x-small: 0.6rem;
 
 	/* Font-weight */
 	--font-weight-bold: 700;
@@ -28,6 +29,7 @@
 	--padding-large: 1.5rem;
 	--padding-medium: 1rem;
 	--padding-small: 0.5rem;
+	--padding-x-small: 0.25rem;
 	--gap-grid: 1rem;
 
 	/* Radius */
