@@ -41,5 +41,11 @@ export default function RenderEvents(data) {
 		buyButtonContainer.classList.add('events__buy-container');
 		buyButton.classList.add('events__buy-button');
 
+		image.setAttribute('src', event.image[4].url);
+		date.innerText = event.date;
+		time.innerText = event.time;
+		artistName.innerText = event.artist;
+		location.innerText = event.venue.venues[0].name;
+		buyButton.innerText = 'kjøp';
 	}
 }
