@@ -47,5 +47,27 @@ export default function RenderEvents(data) {
 		artistName.innerText = event.artist;
 		location.innerText = event.venue.venues[0].name;
 		buyButton.innerText = 'kjøp';
+
+		timeContainer.appendChild(timeIcon);
+		timeContainer.appendChild(time);
+		dateContainer.appendChild(date);
+		dateContainer.appendChild(timeContainer);
+
+
+		info.appendChild(artistName);
+		locationContainer.appendChild(locationIcon);
+		locationContainer.appendChild(location);
+		info.appendChild(locationContainer);
+
+		buyButtonContainer.appendChild(buyButton)
+
+		infoContainer.appendChild(dateContainer);
+		infoContainer.appendChild(info);
+		infoContainer.appendChild(buyButtonContainer);
+
+		eventContainer.appendChild(image);
+		eventContainer.appendChild(infoContainer);
+
+		container.appendChild(eventContainer);
 	}
 }
