@@ -1,3 +1,9 @@
+.events {
+	margin: var(--margin-medium);
+	display: grid;
+	gap: var(--margin-medium);
+}
+
 .events-preview__article {
 	margin: var(--margin-large) var(--margin-medium);
 }
@@ -12,7 +18,7 @@
 }
 
 .events__artist {
-	margin: var(--margin-medium);
+	/* margin: var(--margin-medium); */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -76,3 +82,4 @@
 	width: 0.8rem;
 	display: inline-block;
 }
+
