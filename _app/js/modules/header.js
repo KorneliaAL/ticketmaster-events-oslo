@@ -21,13 +21,15 @@ export default function Header() {
 	function renderHTML() {
 		if (navigationVisible === true) {
 			headerNavigation.classList.add('header__navigation--visible');
-			// headerButtonMenu.style.backgroundImage = 'url(../../assets/icons/exit-menu.svg)';
-			// headerButtonMenu.setAttribute('aria-label', 'Lukk');
+			headerButtonMenu.classList.remove('.header__navigation-menu-button')
+			headerButtonMenu.classList.add('header__navigation-exit-button')
+			headerButtonMenu.setAttribute('aria-label', 'Lukk');
 
-		} else {
+		} else if (navigationVisible === false){
 			headerNavigation.classList.remove('header__navigation--visible');
-			// headerButtonMenu.style.backgroundImage = 'url(../../assets/icons/burger-menu.svg)';
-			// headerButtonMenu.setAttribute('aria-label', 'Meny');
+			headerButtonMenu.classList.remove('header__navigation-exit-button');
+			headerButtonMenu.classList.add('header__navigation-menu-button')
+			headerButtonMenu.setAttribute('aria-label', 'Meny');
 		}
 	}
 }
