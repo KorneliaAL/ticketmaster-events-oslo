@@ -28,6 +28,18 @@ export default function RenderEvents(data) {
 		const buyButtonContainer = document.createElement('div');
 		const buyButton = document.createElement('button');
 
-		
+		eventContainer.classList.add('events__artist');
+		infoContainer.classList.add('events__info-container');
+		dateContainer.classList.add('events__date-container');
+		date.classList.add('events__date');
+		timeContainer.classList.add('events__time');
+		timeIcon.classList.add('events__clock-icon');
+		info.classList.add('events__info');
+		artistName.classList.add('events__artist-name');
+		locationContainer.classList.add('events__location');
+		locationIcon.classList.add('events__location-icon');
+		buyButtonContainer.classList.add('events__buy-container');
+		buyButton.classList.add('events__buy-button');
+
 	}
 }
