@@ -1,4 +1,5 @@
 export default async function FetchEvents() {
+	
 	let city = 'oslo';
 	let size = 50;
 	const key = 'QrmIRWJJfz1HAPOvekvhGGXMtrbalL7c';
@@ -21,12 +22,5 @@ export default async function FetchEvents() {
 		}
 	});
 
-
 	return filteredData;
 }
-
-// image.setAttribute('src', event.image.find(image => image.width > 600)?.url);
-// buyButton.setAttribute('href', event.url);
-// buyButton.setAttribute('target', _blank);
-
-// const _blank = '_blank';
