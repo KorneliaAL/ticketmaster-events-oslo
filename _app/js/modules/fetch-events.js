@@ -1,7 +1,7 @@
 export default async function FetchEvents() {
 	let city = 'oslo';
 	let size = 50;
-	const key = 'r0y0Y9JY3l9MjW0ntmnIo0RMSfK7eoZu';
+	const key = 'QrmIRWJJfz1HAPOvekvhGGXMtrbalL7c';
 	const endpoint = `https://app.ticketmaster.com/discovery/v2/events?apikey=${key}&locale=*&size=${size}&city=${city}&countryCode=NO&segmentName=music`;
 
 	const response = await fetch(endpoint);
@@ -15,9 +15,18 @@ export default async function FetchEvents() {
 			minPrice: event.priceRanges,
 			date: event.dates.start.localDate,
 			time: event.dates.start.localTime,
-			image: event.images
+			image: event.images,
+			timeStamp: event.dates.start.dateTime,
+			url: event.url
 		}
 	});
 
+
 	return filteredData;
 }
+
+// image.setAttribute('src', event.image.find(image => image.width > 600)?.url);
+// buyButton.setAttribute('href', event.url);
+// buyButton.setAttribute('target', _blank);
+
+// const _blank = '_blank';
