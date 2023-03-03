@@ -14,6 +14,8 @@ export default function RenderEvents(data) {
 
 	function formatDate(event) {
 		const getDate = event.date.split('-');
+		const getTime = event.time.split(':');
+		eventTime = `${getTime[0]}:${getTime[1]}`;
 		eventDate = getDate[2];
 
 		const timeStamp = event.timeStamp;
@@ -87,7 +89,7 @@ export default function RenderEvents(data) {
 
 		image.setAttribute('src', event.image[4].url);
 		date.innerText = `${day} ${eventDate} ${month}`;
-		time.innerText = event.time;
+		time.innerText = eventTime;
 		artistName.innerText = event.artist;
 		location.innerText = event.venue.venues[0].name;
 		buyButton.innerText = 'kjøp';
