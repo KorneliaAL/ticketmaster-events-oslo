@@ -1,7 +1,7 @@
 export default function RenderEvents(data) {
 	const container = document.querySelector('.events');
-	let month = '';
-	let day = '';
+	let eventMonth = '';
+	let eventDay = '';
 	let eventDate = '';
 	let eventTime = '';
 
@@ -47,12 +47,12 @@ export default function RenderEvents(data) {
 
 		const finalMonth = months[formatedDate.getMonth()];
 
-		day = weekday;
-		month = finalMonth;
+		eventDay = weekday;
+		eventMonth = finalMonth;
 	}
 
 	function renderHTML(event) {
-
+		const _blank = '_blank';
 
 		const eventContainer = document.createElement('div');
 		const image = document.createElement('img');
@@ -60,6 +60,7 @@ export default function RenderEvents(data) {
 		const infoContainer = document.createElement('div');
 
 		const dateContainer = document.createElement('div');
+		const day = document.createElement('div');
 		const date = document.createElement('div');
 		const timeContainer = document.createElement('div');
 		const timeIcon = document.createElement('div');
@@ -72,7 +73,7 @@ export default function RenderEvents(data) {
 		const location = document.createElement('span');
 
 		const buyButtonContainer = document.createElement('div');
-		const buyButton = document.createElement('button');
+		const buyButton = document.createElement('a');
 
 		eventContainer.classList.add('events__artist');
 		infoContainer.classList.add('events__info-container');
@@ -88,7 +89,12 @@ export default function RenderEvents(data) {
 		buyButton.classList.add('events__buy-button');
 
 		image.setAttribute('src', event.image.find(image => image.width > 600)?.url);
-		date.innerText = `${day} ${eventDate} ${month}`;
+		buyButton.setAttribute('href', event.url);
+		buyButton.setAttribute('target', _blank);
+
+		
+		date.innerText = `${eventDate} ${eventMonth}`;
+		day.innerText = eventDay
 		time.innerText = eventTime;
 		artistName.innerText = event.artist;
 		location.innerText = event.venue.venues[0].name;
@@ -96,6 +102,7 @@ export default function RenderEvents(data) {
 
 		timeContainer.appendChild(timeIcon);
 		timeContainer.appendChild(time);
+		dateContainer.appendChild(day);
 		dateContainer.appendChild(date);
 		dateContainer.appendChild(timeContainer);
 
