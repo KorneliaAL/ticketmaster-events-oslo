@@ -87,7 +87,7 @@ export default function RenderEvents(data) {
 		buyButtonContainer.classList.add('events__buy-container');
 		buyButton.classList.add('events__buy-button');
 
-		image.setAttribute('src', event.image[4].url);
+		image.setAttribute('src', event.image.find(image => image.width > 600)?.url);
 		date.innerText = `${day} ${eventDate} ${month}`;
 		time.innerText = eventTime;
 		artistName.innerText = event.artist;
