@@ -1,13 +1,57 @@
 export default function RenderEvents(data) {
 	const container = document.querySelector('.events');
+	let month = '';
+	let day = '';
+	let eventDate = '';
+	let eventTime = '';
 
 	if (container) {
 		data.forEach(event => {
+			formatDate(event);
 			renderHTML(event);
 		});
 	}
 
+	function formatDate(event) {
+		const getDate = event.date.split('-');
+		eventDate = getDate[2];
+
+		const timeStamp = event.timeStamp;
+		const formatedDate = new Date(timeStamp);
+		const days = [
+			'Søndag',
+			'Mandag',
+			'Tirsdag',
+			'Onsdag',
+			'Torsdag',
+			'Fredag',
+			'Lørdag'];
+
+		const months = [
+			"Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			"Mai",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Okt",
+			"Nov",
+			"Des",
+		];
+		const weekday = days[formatedDate.getDay()];
+
+		const finalMonth = months[formatedDate.getMonth()];
+
+		day = weekday;
+		month = finalMonth;
+	}
+
 	function renderHTML(event) {
+
+
 		const eventContainer = document.createElement('div');
 		const image = document.createElement('img');
 
@@ -42,7 +86,7 @@ export default function RenderEvents(data) {
 		buyButton.classList.add('events__buy-button');
 
 		image.setAttribute('src', event.image[4].url);
-		date.innerText = event.date;
+		date.innerText = `${day} ${eventDate} ${month}`;
 		time.innerText = event.time;
 		artistName.innerText = event.artist;
 		location.innerText = event.venue.venues[0].name;
