@@ -1,5 +1,5 @@
 export default function RenderEvents(data) {
-	const container = document.querySelector('.events');
+	const container = document.querySelector('.events__container');
 	let eventMonth = '';
 	let eventDay = '';
 	let eventDate = '';
@@ -88,7 +88,7 @@ export default function RenderEvents(data) {
 		buyButtonContainer.classList.add('events__buy-container');
 		buyButton.classList.add('events__buy-button');
 
-		image.setAttribute('src', event.image.find(image => image.width > 600)?.url);
+		image.setAttribute('src', event.image.find(image => image.width > 610)?.url);
 		buyButton.setAttribute('href', event.url);
 		buyButton.setAttribute('target', _blank);
 
