@@ -1,7 +1,14 @@
-.events {
+.events__container {
 	margin: var(--margin-medium);
 	display: grid;
 	gap: var(--margin-medium);
+	/* grid-template-columns: 1fr; */
+}
+
+@media screen and (min-width: 768px){
+	.events__container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 
 .events-preview__article {
@@ -11,6 +18,11 @@
 .events-preview__header {
 	font-size: var(--font-size-medium);
 	font-weight: var(--font-weight-medium);
+}
+
+.events__header {
+	font-family: var(--font-family-header);
+	/* grid-column: 1/4; */
 }
 
 .events-preview__text {
@@ -25,12 +37,15 @@
 	/* border: 1px solid var(--color-01); */
 }
 
+
+
 .events__info-container {
 	display: flex;
 	/* display: grid;
 	grid-template-columns: 10% 75% 15%; */
 	font-size: var(--font-size-small);
 	border: 1px solid black;
+	border-top: none;
 }
 
 .events__date-container {
@@ -39,12 +54,13 @@
 	width: 3rem;
 	padding: 0 var(--padding-x-small);
 	font-size: var(--font-size-small);
+	min-width: 3rem;
 }
 
 .events__clock-icon {
 	background-image: url(../../assets/icons/clock.svg);
 	background-repeat: no-repeat;
-	height: 0.76rem;
+	height: 0.757rem;
 	width: 0.8rem;
 	display: inline-block;
 }
