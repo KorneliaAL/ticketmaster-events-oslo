@@ -6,4 +6,4 @@ import FilterEvents from './modules/filter-events.js';
 Header();
 const eventData = await FetchEvents();
 RenderEvents(eventData);
-FilterEvents(eventData);
+// FilterEvents(eventData);
