@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tune in Oslo</title>
+	<link rel="stylesheet" href="../css/main.css">
+	<script type="module" src="../js/main.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<a href="/_app/index.html" class="header__logo">Tune in Oslo</a>
+		<button class="header__navigation-menu-button"></button>
+		<nav class="header__navigation">
+			<ul class="header__navigation-list-container">
+				<li class="header__navigation-element">
+					<a href="../index.html" class="header__navigation-element-button">Hjem</a>
+					<!-- <button class="header__navigation-arrow-button"></button> -->
+				</li>
+				<li class="header__navigation-element">
+					<a href="./events/index.html" class="header__navigation-element-button">Arrangementer</a>
+				</li>
+				<li class="header__navigation-element">
+					<a href="./index.html#footer " class="header__navigation-element-button">Kontakt oss</a>
+				</li>
+			</ul>
+			<div class="header__search">
+				<input type="text" class="header__search-input" placeholder="Søk...">
+				<button class="header__search-button"></button>
+			</div>
+			<div class="header__heart"></div>
+		</nav>
+	</header>
+	<main>
+		<section class="events">
+			<h1 class="events__header">Arrangementer</h1>
+			<div class="events__filter-container">
+				<button class="events__filter-button">Kategori</button>
+				<div class="events__filter-element-container">
+					<button class="events__filter-element-button">Hip Hop</button>
+					<button class="events__filter-element-button">Jazz</button>
+					<button class="events__filter-element-button">Pop</button>
+				</div>
+			</div>
+			<div class="events__container"></div>
+		</section>
+	</main>
+	<footer></footer>
+</body>
+
+</html>
