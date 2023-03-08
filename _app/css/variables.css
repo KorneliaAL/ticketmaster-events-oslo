@@ -32,6 +32,7 @@
 	--padding-x-small: 0.25rem;
 	--gap-grid: 1rem;
 
-	/* Radius */
+	/* Border */
 	--border-radius: 0.5rem;
+	--border: 1px solid #022723;
 }
