@@ -1,5 +1,15 @@
 .events__filter-element-button {
 	margin: var(--marign-small);
 	padding: var(--padding-small);
-	border: var(--border);
+	transition: all 300ms ease-in-out;
+}
+
+.events__filter-element-button:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.events__filter-element-button--active {
+	text-decoration: underline;
+	font-weight: bold;
 }
