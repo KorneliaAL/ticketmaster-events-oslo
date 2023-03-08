@@ -4,5 +4,6 @@
 @import './base.css';
 
 @import './modules/events.css';
+@import './modules/filter-events.css';
 @import './modules/header.css';
 @import './modules/hero.css';
