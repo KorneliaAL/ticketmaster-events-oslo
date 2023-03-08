@@ -1,3 +1,5 @@
 .events__filter-element-button {
-	margin: var(--margin-small);
+	margin: var(--marign-small);
+	padding: var(--padding-small);
+	border: var(--border);
 }
