@@ -8,11 +8,10 @@
 .events__filter-element-button {
 	margin: var(--marign-small);
 	padding: var(--padding-small);
-	transition: all 300ms ease-in-out;
+	transition: all 250ms ease-in-out;
 }
 
 .events__filter-element-button:hover {
-	text-decoration: underline;
 	font-weight: bold;
 }
 
