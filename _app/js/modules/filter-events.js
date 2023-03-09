@@ -38,9 +38,6 @@ export default function FilterEvents(data) {
 			name: 'World'
 		},
 		{
-			name: 'Folk'
-		},
-		{
 			name: 'Dance'
 		},
 		{
