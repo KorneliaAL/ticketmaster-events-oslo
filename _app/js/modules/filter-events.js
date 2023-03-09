@@ -5,7 +5,7 @@ export default function FilterEvents(data) {
 	const buttonContainer = document.querySelector('.events__filter-element-container');
 	const genreButtons = [
 		{
-			name: 'All'
+			name: 'Alle'
 		},
 		{
 			name: 'Theatre'
@@ -50,7 +50,7 @@ export default function FilterEvents(data) {
 			name: 'Blues'
 		},
 		{
-			name: 'Dance/Electronic'
+			name: 'Electronic'
 		}
 	];
 
@@ -76,7 +76,7 @@ export default function FilterEvents(data) {
 	function filterEvents(currentGenre) {
 		let filteredEvents = [];
 		switch (currentGenre) {
-			case 'All': 
+			case 'Alle': 
 				filteredEvents = data;
 				break;
 
@@ -132,7 +132,7 @@ export default function FilterEvents(data) {
 				filteredEvents = data.filter(event => event.genre[0].genre.name=== 'Blues');
 				break;
 
-			case 'Dance/Electronic':
+			case 'Electronic':
 				filteredEvents = data.filter(event => event.genre[0].genre.name=== 'Dance/Electronic');
 				break;
 		}
