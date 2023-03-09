@@ -1,3 +1,10 @@
+.events__filter-element-container {
+	display: grid;
+	margin: var(--margin-medium);
+	grid-template-columns: repeat(5, 20%);
+	border: var(--border);
+}
+
 .events__filter-element-button {
 	margin: var(--marign-small);
 	padding: var(--padding-small);
