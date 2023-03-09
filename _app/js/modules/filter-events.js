@@ -59,8 +59,22 @@ export default function FilterEvents(data) {
 	}
 
 	function handleButtonElementClick(event) {
-		const currentButton = event.target.innerText
-		filterEvents(currentButton);
+		const currentGenre = event.target.innerText;
+		const currentButton = event.target;
+		const allButtons = event.target.parentElement.childNodes;
+		removeClasslist(allButtons);
+		addClasslist(currentButton);
+		filterEvents(currentGenre);
+	}
+
+	function removeClasslist(buttons) {
+		buttons.forEach(button => {
+			button.classList.remove('events__filter-element-button--active');
+		});
+	}
+
+	function addClasslist(button) {
+		button.classList.add('events__filter-element-button--active');
 	}
 
 	function filterEvents(currentGenre) {
