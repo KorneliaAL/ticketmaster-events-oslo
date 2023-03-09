@@ -62,19 +62,15 @@ export default function FilterEvents(data) {
 		const currentGenre = event.target.innerText;
 		const currentButton = event.target;
 		const allButtons = event.target.parentElement.childNodes;
-		removeClasslist(allButtons);
-		addClasslist(currentButton);
+		toggleClass(allButtons, currentButton);
 		filterEvents(currentGenre);
 	}
 
-	function removeClasslist(buttons) {
+	function toggleClass(buttons, currentButton) {
 		buttons.forEach(button => {
 			button.classList.remove('events__filter-element-button--active');
 		});
-	}
-
-	function addClasslist(button) {
-		button.classList.add('events__filter-element-button--active');
+		currentButton.classList.add('events__filter-element-button--active');
 	}
 
 	function filterEvents(currentGenre) {
