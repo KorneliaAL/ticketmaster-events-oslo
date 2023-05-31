@@ -17,4 +17,4 @@ Tune in Oslo is a web application that displays a wide range of events happening
 
 ## Demo
 
-Check out the [Tune in Oslo web application](https://guileless-mousse-4aa15c.netlify.app/events/index.html) to explore upcoming events in Oslo!
+Check out the [Tune in Oslo](https://guileless-mousse-4aa15c.netlify.app/events/index.html) to explore upcoming events in Oslo!
